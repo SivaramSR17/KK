@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Top Attractions</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&family=Roboto&display=swap" rel="stylesheet">
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: {
+            display: ['Playfair Display', 'serif'],
+            body: ['Roboto', 'sans-serif']
+          },
+          colors: {
+            sunset: '#f97316',
+            sea: '#0f172a',
+            sand: '#fef3c7'
+          }
+        }
+      }
+    }
+  </script>
+</head>
+<body class="bg-sand font-body text-sea">
+
+  <header class="bg-white shadow-md sticky top-0 z-50">
+    <div class="max-w-7xl mx-auto px-4 py-4 flex items-center justify-between">
+      <h1 class="text-3xl font-display font-bold text-sunset">Kanyakumari</h1>
+      <nav>
+        <ul class="flex space-x-6 text-lg font-semibold">
+          <li><a href="index.html" class="hover:text-sunset transition">Home</a></li>
+          <li><a href="about.html" class="hover:text-sunset transition">About</a></li>
+          <li><a href="attractions.html" class="text-sunset font-bold">Attractions</a></li>
+          <li><a href="contact.html" class="hover:text-sunset transition">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <section class="max-w-6xl mx-auto px-4 py-16">
+    <h2 class="text-4xl font-display font-bold text-center mb-12">Top Attractions in Kanyakumari</h2>
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-10">
+      <div class="bg-white p-6 rounded-xl shadow-md hover:shadow-xl transition transform hover:-translate-y-1">
+        <img src="images/vivekananda-rock-memorial.jpg" alt="Vivekananda Rock" class="rounded-lg mb-4 h-48 w-full object-cover" />
+        <h4 class="text-xl font-semibold text-sunset mb-2">Vivekananda Rock Memorial</h4>
+        <p>This iconic monument located on a small island offers spiritual tranquility and panoramic views.</p>
+      </div>
+      <div class="bg-white p-6 rounded-xl shadow-md hover:shadow-xl transition transform hover:-translate-y-1">
+        <img src="images/thiruvalluvar-statue.jpg" alt="Thiruvalluvar Statue" class="rounded-lg mb-4 h-48 w-full object-cover" />
+        <h4 class="text-xl font-semibold text-sunset mb-2">Thiruvalluvar Statue</h4>
+        <p>Standing tall beside the memorial, this statue honors the great Tamil poet and philosopher Thiruvalluvar.</p>
+      </div>
+      <div class="bg-white p-6 rounded-xl shadow-md hover:shadow-xl transition transform hover:-translate-y-1">
+        <img src="images/kanyakumari-temple.jpg" alt="Temple" class="rounded-lg mb-4 h-48 w-full object-cover" />
+        <h4 class="text-xl font-semibold text-sunset mb-2">Kanyakumari Temple</h4>
+        <p>Dedicated to Goddess Kanya Kumari, the temple is an important spiritual destination for pilgrims.</p>
+      </div>
+    </div>
+  </section>
+
+  <footer class="bg-white text-center py-6 border-t mt-12">
+    <p class="text-sea">&copy; 2025 Kanyakumari Tourism. All rights reserved.</p>
+  </footer>
+
+</body>
+</html>

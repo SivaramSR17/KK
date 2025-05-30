@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>About Kanyakumari</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&family=Roboto&display=swap" rel="stylesheet">
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: {
+            display: ['Playfair Display', 'serif'],
+            body: ['Roboto', 'sans-serif']
+          },
+          colors: {
+            sunset: '#f97316',
+            sea: '#0f172a',
+            sand: '#fef3c7'
+          }
+        }
+      }
+    }
+  </script>
+</head>
+<body class="bg-sand font-body text-sea">
+
+  <header class="bg-white shadow-md sticky top-0 z-50">
+    <div class="max-w-7xl mx-auto px-4 py-4 flex items-center justify-between">
+      <h1 class="text-3xl font-display font-bold text-sunset">Kanyakumari</h1>
+      <nav>
+        <ul class="flex space-x-6 text-lg font-semibold">
+          <li><a href="index.html" class="hover:text-sunset transition">Home</a></li>
+          <li><a href="about.html" class="text-sunset font-bold">About</a></li>
+          <li><a href="attractions.html" class="hover:text-sunset transition">Attractions</a></li>
+          <li><a href="contact.html" class="hover:text-sunset transition">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <section class="max-w-4xl mx-auto px-4 py-16">
+    <h2 class="text-4xl font-display font-bold text-center mb-8">About Kanyakumari</h2>
+    <p class="text-lg mb-6 leading-relaxed">
+      Kanyakumari, located at the southernmost tip of India, is where the Bay of Bengal, Arabian Sea, and Indian Ocean converge. Known for its breathtaking sunrises and sunsets, the town holds spiritual, cultural, and natural significance. It is a place where you can witness the unique spectacle of the sun and moon simultaneously visible on the horizon.
+    </p>
+    <p class="text-lg mb-6 leading-relaxed">
+      The town is named after Goddess Kanya Kumari, believed to be an incarnation of Parvati. Tourists flock here to see the famous Vivekananda Rock Memorial, Thiruvalluvar Statue, and the picturesque beaches that offer tranquility and inspiration.
+    </p>
+    <p class="text-lg leading-relaxed">
+      Kanyakumari is more than a destination—it's an experience. Its blend of natural beauty, ancient history, spiritual importance, and warm hospitality make it a must-visit location on every traveler's list.
+    </p>
+  </section>
+
+  <footer class="bg-white text-center py-6 border-t mt-12">
+    <p class="text-sea">&copy; 2025 Kanyakumari Tourism. All rights reserved.</p>
+  </footer>
+
+</body>
+</html>
